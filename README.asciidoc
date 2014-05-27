@@ -5,3 +5,16 @@ Auckland Transport API Client
 
 A set of client implementations for the Auckland Transport web-services API.
 
+== Usage
+
+This project is built with maven and released to maven central. Use of this library should be as simple as including
+the relevant dependency in your project configuration. If you're using Gradle, Ivy, SBT, etc. and you don't know how to
+include a maven dependency, just google it; it's not hard.
+
+```XML
+<dependency>
+	<groupId>nz.co.aetheric.api</groupId>
+	<artifactId>${client-implementation}</artifact>
+	<version>${client-version}</version>
+</dependency>
+```

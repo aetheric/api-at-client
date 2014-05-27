@@ -1,0 +1,36 @@
+<project
+		xmlns="http://maven.apache.org/POM/4.0.0"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="
+			http://maven.apache.org/POM/4.0.0
+			http://maven.apache.org/xsd/maven-4.0.0.xsd
+		">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>nz.co.aetheric.parent</groupId>
+		<artifactId>maven-parent-global</artifactId>
+		<version>1.1.0</version>
+	</parent>
+
+	<groupId>nz.co.aetheric.api</groupId>
+	<artifactId>at-client-java</artifactId>
+	<version>1.1.0-SNAPSHOT</version>
+	<packaging>jar</packaging>
+
+	<name>Auckland Transport API client: Java</name>
+	<description>
+		A set of client implementations for the Auckland Transport web-services API.
+	</description>
+
+	<properties>
+	</properties>
+
+	<build>
+		<plugins>
+
+
+		</plugins>
+	</build>
+
+</project>

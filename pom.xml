@@ -14,7 +14,7 @@
 	</parent>
 
 	<groupId>nz.co.aetheric.api</groupId>
-	<artifactId>api-at-client</artifactId>
+	<artifactId>at-client</artifactId>
 	<version>1.1.0-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
@@ -33,6 +33,11 @@
 		</developer>
 
 	</developers>
+
+	<modules>
+		<module>at-client-java</module>
+		<module>at-client-javascript</module>
+	</modules>
 
 	<properties>
 		<version.asciidoc>0.1.4</version.asciidoc>
