@@ -8,5 +8,9 @@ import javax.ws.rs.Path;
  * <p>Author: <a href="http://gplus.to/tzrlk">Peter Cummuskey</a></p>
  */
 @Path("/gtfs")
-public interface GtfsEndpoints {
+public interface GtfsEndpoints extends
+		GetAgenciesList,
+		GetCalendarByServiceId,
+		GetCalendarExceptionList,
+		GetCalendarList {
 }
