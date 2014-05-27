@@ -7,7 +7,7 @@ import javax.ws.rs.Path;
  * served on.
  * <p>Author: <a href="http://gplus.to/tzrlk">Peter Cummuskey</a></p>
  */
-@Path("/realtime")
+@Path("/public/realtime")
 public interface RealtimeEndpoints extends
 		GetVehicleLocations {
 }

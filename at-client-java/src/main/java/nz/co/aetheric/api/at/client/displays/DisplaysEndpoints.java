@@ -7,7 +7,7 @@ import javax.ws.rs.Path;
  * served on.
  * <p>Author: <a href="http://gplus.to/tzrlk">Peter Cummuskey</a></p>
  */
-@Path("/display")
+@Path("/public/display")
 public interface DisplaysEndpoints extends
 		GetCustomerServiceCentres,
 		GetParkingLocations,
