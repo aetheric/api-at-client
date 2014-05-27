@@ -1,0 +1,20 @@
+
+# IntelliJ
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Eclipse
+.settings/
+.checkstyle
+.classpath
+.project
+
+# Build
+target/
+*.log
+
+# Metadata
+*.orig
+*.swp

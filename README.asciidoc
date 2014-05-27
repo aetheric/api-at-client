@@ -1,0 +1,7 @@
+Auckland Transport API Client
+=============================
+:author: Peter Cummuskey
+:email: peterc@aetheric.co.nz
+
+A set of client implementations for the Auckland Transport web-services API.
+
