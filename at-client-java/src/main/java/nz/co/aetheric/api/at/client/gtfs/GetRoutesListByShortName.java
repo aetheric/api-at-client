@@ -13,30 +13,29 @@ import javax.xml.bind.annotation.XmlRootElement;
  * TODO: What is the purpose of this class?
  * <p>Author: <a href="http://gplus.to/tzrlk">Peter Cummuskey</a></p>
  */
-public interface GetCalendarByServiceId {
+public interface GetRoutesListByShortName {
 
 	/**
-	 * Dates for service IDs using a weekly schedule. Specify when service starts and ends, as well as days of the week
-	 * where service is available, filtered by service id.
+	 * Transit routes. A route is a group of trips that are displayed to riders as a single service.
 	 * @param request The request item.
 	 * @return The response item.
 	 */
 	@GET
-	@Path("/calendar/serviceId/{service_id}")
+	@Path("/routes/routeShortName/{route_short_name}")
 	@Consumes(MediaType.APPLICATION_JSON)
 	@Produces(MediaType.APPLICATION_JSON)
-	public Response getScheduledWorks(Request request);
+	public Response getRoutesListByShortName(Request request);
 
 	@Data
 	@XmlRootElement
 	public static class Request extends ApiRequest {
 
 		/**
-		 * service id
+		 * name of the route
 		 */
 		@XmlElement(required = true)
-		@PathParam("service_id")
-		protected String service_id;
+		@PathParam("route_short_name")
+		protected String route_short_name;
 
 	}
 

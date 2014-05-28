@@ -13,19 +13,18 @@ import javax.xml.bind.annotation.XmlRootElement;
  * TODO: What is the purpose of this class?
  * <p>Author: <a href="http://gplus.to/tzrlk">Peter Cummuskey</a></p>
  */
-public interface GetCalendarByServiceId {
+public interface GetCalendarExceptionByServiceId {
 
 	/**
-	 * Dates for service IDs using a weekly schedule. Specify when service starts and ends, as well as days of the week
-	 * where service is available, filtered by service id.
+	 * Exceptions for the service IDs defined in the calendar list, filtered by service id.
 	 * @param request The request item.
 	 * @return The response item.
 	 */
 	@GET
-	@Path("/calendar/serviceId/{service_id}")
+	@Path("/calendarDate/serviceId/{service_id}")
 	@Consumes(MediaType.APPLICATION_JSON)
 	@Produces(MediaType.APPLICATION_JSON)
-	public Response getScheduledWorks(Request request);
+	public Response getCalendarExceptionByServiceId(Request request);
 
 	@Data
 	@XmlRootElement
