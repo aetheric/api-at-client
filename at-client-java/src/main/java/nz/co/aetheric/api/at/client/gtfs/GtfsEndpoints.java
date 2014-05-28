@@ -10,7 +10,28 @@ import javax.ws.rs.Path;
 @Path("/gtfs")
 public interface GtfsEndpoints extends
 		GetAgenciesList,
+		GetCalendarList,
 		GetCalendarByServiceId,
 		GetCalendarExceptionList,
-		GetCalendarList {
+		GetCalendarExceptionByServiceId,
+		GetRoutesList,
+		GetRoutesListById,
+		GetRoutesListByLongName,
+		GetRoutesListByShortName,
+		GetRoutesBySearchText,
+		GetRoutesBySearchArea,
+		GetRoutesByStopId,
+		GetShapeById,
+		GetShapeByTripId,
+		GetShapeGeometryById,
+		GetStopsList,
+		GetStopById,
+		GetStopByCode,
+		GetStopsBySearchName,
+		GetStopsBySearchArea,
+		GetStopTimesByStopId,
+		GetStopTimesByTripId,
+		GetTripsList,
+		GetTripsByTripId,
+		GetTripsByRouteId {
 }
